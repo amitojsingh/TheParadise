@@ -1,0 +1,21 @@
+app-header{
+  display:none;
+}
+
+.row{
+  margin:3em;
+}
+#name{
+  font-size:3em;
+  border:2px #ecf0f1 solid;
+}
+input,textarea{
+  border:2px #ecf0f1 solid;
+}
+textarea{
+  height:200px;
+  background-color:#ecf0f1;
+}
+label{
+  display:none;
+}

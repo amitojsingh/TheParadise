@@ -1,0 +1,17 @@
+<app-header [content]="pageContent.header"></app-header>
+<div class="details">
+  <div class="image-wrapper">
+  <img  src={{newbook.image}}/>
+  </div>
+
+  <div class="text-wrapper">
+<h2>{{newbook.name}}</h2>
+<p class="author"> {{newbook.type}}</p>
+  <p class="summary">{{newbook.summary}}</p>
+  <p class="price"><span> $</span>{{newbook.price}}</p>
+  <button class="btn btn-secondary" routerLink="/updatebook/{{newbook._id}}" >Edit</button>
+  <button class="btn btn-danger"(click)="deletebook(newbook._id)">Delete</button>
+  </div>
+</div>
+
+

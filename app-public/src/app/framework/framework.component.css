@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Caslon+Display&display=swap');
+img{
+  width:50px;
+}
+.heading{
+  font-size:1.7em;
+  font-family:'Libre Caslon Display',serif;
+  font-weight: bold;
+  color:#000;
+}
+a{
+  color:#2f2f2f;
+}
+

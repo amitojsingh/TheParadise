@@ -1,0 +1,28 @@
+<app-header [content]="pageContent.header"></app-header>
+<div class="row row justify-content-md-center ">
+  <div class="col-lg-6">
+<form (ngSubmit)="updateBook(newbook._id,newbook)">
+<div class="form-group">
+  <label for="name">Name</label>
+  <input [(ngModel)]="newbook.name" id="name" name="name" class="form-control " required="required">
+</div>
+<div class="form-group">
+  <label for="type">Author</label>
+  <input [(ngModel)]="newbook.type" class="form-control" id="type" name="type" required="required">
+</div>
+  <div class="form-group">
+    <label for="image">Image</label>
+    <input [(ngModel)]="newbook.image"class="form-control" id="image" name="image" required="required">
+  </div>
+  <div class="form-group">
+    <label for="summary">Summary</label>
+    <textarea [(ngModel)]="newbook.summary"class="form-control" id="summary" name="summary" required="required"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="price">Price</label>
+    <input [(ngModel)]="newbook.price"class="form-control" id="price" name="price" required="required">
+  </div>
+<button class="btn btn-secondary" type="submit">Update</button>
+</form>
+</div>
+</div>
